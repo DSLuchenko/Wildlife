@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:regular&display=swap"
       rel="stylesheet"
     />
@@ -15,6 +19,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Wildlife</title>
   </head>
+
   <body class="wrapper">
     <header class="header">
       <div class="header__container _container">
@@ -67,44 +72,92 @@
               <h2>Latest articles</h2>
               <span>Breaking news from the wild</span>
             </div>
-            <div class="articles-block__slider">
-              <button class="slider__btn slider__btn-prev"><</button>
-              <div class="slider__items">
-                <div class="slider__item">
-                  <div class="slider__item-body">
-                    <h3>Deer</h3>
-                    <span>Naturalist investigation</span>
+            <div class="articles-block__slider _container">
+              <div class="swiper">
+                <div class="slider__items swiper-wrapper">
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Deer</h3>
+                      <span>Naturalist investigation</span>
+                    </div>
+                    <img
+                      src="img/deercover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
                   </div>
-                  <img
-                    src="img/deercover.png"
-                    alt=""
-                    class="slider__item-image _ibg"
-                  />
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item-body">
-                    <h3>Squirrel</h3>
-                    <span>Kamikaze squirrels</span>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Deer</h3>
+                      <span>Naturalist investigation</span>
+                    </div>
+                    <img
+                      src="img/deercover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
                   </div>
-                  <img
-                    src="img/squirrelcover.png"
-                    alt=""
-                    class="slider__item-image _ibg"
-                  />
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item-body">
-                    <h3>Bird</h3>
-                    <span>Birds Fight club</span>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Squirrel</h3>
+                      <span>Kamikaze squirrels</span>
+                    </div>
+                    <img
+                      src="img/squirrelcover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
                   </div>
-                  <img
-                    src="img/birdcover.png"
-                    alt=""
-                    class="slider__item-image _ibg"
-                  />
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Bird</h3>
+                      <span>Birds Fight club</span>
+                    </div>
+                    <img
+                      src="img/birdcover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
+                  </div>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Deer</h3>
+                      <span>Naturalist investigation</span>
+                    </div>
+                    <img
+                      src="img/deercover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
+                  </div>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Deer</h3>
+                      <span>Naturalist investigation</span>
+                    </div>
+                    <img
+                      src="img/deercover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
+                  </div>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__item-body">
+                      <h3>Deer</h3>
+                      <span>Naturalist investigation</span>
+                    </div>
+                    <img
+                      src="img/deercover.png"
+                      alt=""
+                      class="slider__item-image _ibg"
+                    />
+                  </div>
                 </div>
+                
               </div>
-              <button class="slider__btn slider__btn-next">></button>
+              <div class="slider__btn swiper-button-next"></div>
+                <div class="slider__btn swiper-button-prev"></div>
+              
             </div>
             <div class="articles-block__botom">
               <h4>Get notified about new amazing articles</h4>
@@ -169,5 +222,7 @@
         alt="footer-cover"
       />
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
